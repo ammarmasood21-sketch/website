@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feane Restaurant</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  <style>
+    /* ---------- YOUR ORIGINAL CSS (exactly as provided, unchanged) ---------- */
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    .main {
+      height: 600px;
+      width: 100vw;
+      background-image: url(./images/hero-bg.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .tittle {
+      font-family: 'pacifico', cursive;
+      color: white;
+      margin: 0px;
+    }
+
+    .heading {
+      margin-top: 28px;
+      padding-right: 50px;
+    }
+
+    .links {
+      display: flex;
+      gap: 40px;
+      font-size: larger;
+      margin-top: 40px;
+    }
+
+    .btn {
+      height: 40px;
+      width: 150px;
+      background: rgb(241, 185, 81);
+      color: white;
+      border-radius: 20px;
+      margin-top: 30px;
+      border: 0px;
+    }
+
+    .icons {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .icon1 {
+      margin-top: 30px;
+    }
+
+    .btn:hover {
+      background-color: orange;
+      color: white;
+    }
+
+    .home:hover,
+    .menu:hover,
+    .about:hover,
+    .booktable:hover {
+      color: orange;
+    }
+
+    .icon1:hover {
+      color: orange;
+    }
+
+    .main1 {
+      height: 300px;
+      width: 600px;
+      display: flex;
+      align-items: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      margin-top: 160px;
+    }
+
+    .slide-left-right {
+      animation: slideInFromLeft 0.5s ease-out;
+    }
+
+    @keyframes slideInFromLeft {
+      0% {
+        opacity: 0;
+        transform: translateX(-40px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .heading1 {
+      color: white;
+      margin-left: 100px;
+      font-size: 40px;
+      font-family: "Dancing Script", cursive;
+      font-optical-sizing: auto;
+      font-style: normal;
+    }
+
+    .para {
+      margin-top: 30px;
+      margin-left: 40px;
+    }
+
+    .orderbtn {
+      margin-top: 40px;
+      margin-left: 80px;
+      height: 50px;
+      width: 200px;
+      border-radius: 30px;
+      background-color: orange;
+      color: white;
+      border: 0px;
+      cursor: pointer;
+    }
+
+    .orderbtn:hover {
+      background-color: rgb(223, 109, 68);
+      color: white;
+    }
+
+    .dots {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 70px;
+      margin-left: 50px;
+    }
+
+    .dot {
+      height: 12px;
+      width: 12px;
+      color: rgb(36, 103, 162);
+      border: 1px solid rgb(247, 242, 242);
+      border-radius: 50%;
+      background-color: rgb(254, 254, 254);
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .dot:hover {
+      background-color: rgb(182, 145, 37);
+    }
+
+    .dot.active {
+      background-color: rgb(241, 185, 81);
+      border-color: rgb(241, 185, 81);
+      transform: scale(1.1);
+    }
+
+    .main2 {
+      height: 250px;
+      width: 1264.5px;
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      gap: 50px;
+    }
+
+    .box1 {
+      height: 150px;
+      width: 500px;
+      border: 1px solid black;
+      margin-left: 100px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background-color: #222831;
+      color: white;
+      transition: transform 2s linear;
+    }
+
+    .box1:hover .img {
+      transform: scale(1.1);
+    }
+
+    .box2 {
+      height: 150px;
+      width: 500px;
+      border: 1px solid black;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background-color: #222831;
+      color: white;
+    }
+
+    .box2:hover .img1 {
+      transform: scale(1.1);
+    }
+
+    .circle {
+      height: 110px;
+      width: 110px;
+      border: 3px solid yellow;
+      border-radius: 50%;
+      margin-left: 20px;
+      overflow: hidden;
+    }
+
+    .circle1 {
+      height: 110px;
+      width: 110px;
+      border: 3px solid yellow;
+      border-radius: 50%;
+      margin-left: 20px;
+      overflow: hidden;
+    }
+
+    .text {
+      font-family: "Dancing Script", cursive;
+      font-optical-sizing: auto;
+      font-style: normal;
+    }
+
+    .btn1 {
+      height: 40px;
+      width: 110px;
+      border-radius: 30px;
+      margin-top: 5px;
+      background-color: orange;
+      color: white;
+      border: 0px;
+    }
+
+    .para1 {
+      margin-top: 5px;
+      font-weight: bolder;
+      font-size: 30px;
+    }
+
+    .para2 {
+      margin-top: 5px;
+      font-weight: bolder;
+      font-size: 30px;
+    }
+
+    .img {
+      height: 105px;
+      width: 105px;
+      border-radius: 50%;
+    }
+
+    .off {
+      font-size: 12px;
+    }
+
+    .para3 {
+      margin-top: 5px;
+      font-weight: bolder;
+      font-size: 30px;
+    }
+
+    .para4 {
+      margin-top: 5px;
+      font-weight: bolder;
+      font-size: 30px;
+    }
+
+    .text1 {
+      font-family: "Dancing Script", cursive;
+      font-optical-sizing: auto;
+      font-style: normal;
+    }
+
+    .off1 {
+      font-size: 12px;
+    }
+
+    .btn2 {
+      height: 40px;
+      width: 110px;
+      border-radius: 30px;
+      margin-top: 5px;
+      background-color: orange;
+      color: white;
+      border: 0px;
+    }
+
+    .img1 {
+      height: 105px;
+      width: 105px;
+      border-radius: 50%;
+    }
+
+    .heading2 {
+      font-family: "Dancing Script", cursive;
+      font-optical-sizing: auto;
+      font-size: 50px;
+      font-style: normal;
+      text-align: center;
+    }
+
+    .button {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-left: 450px;
+      margin-top: 50px;
+    }
+
+    .btn4 {
+      height: 30px;
+      width: 60px;
+      border: 1px solid white;
+      background-color: white;
+      border-radius: 30px;
+    }
+
+    .btn4:hover {
+      color: white;
+      background-color: black;
+    }
+
+    .main3 {
+      height: 450px;
+      width: 100vw;
+      border: 1px solid rgb(253, 252, 252);
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .box3 {
+      height: 400px;
+      width: 350px;
+      border: 1px solid rgb(252, 250, 250);
+      background-color: #222831;
+      margin-left: 70px;
+      border-radius: 20px;
+    }
+
+    .box4 {
+      height: 400px;
+      width: 350px;
+      border: 1px solid rgb(251, 249, 249);
+      background-color: #222831;
+      border-radius: 20px;
+    }
+
+    .box5 {
+      height: 400px;
+      width: 350px;
+      border: 1px solid rgb(251, 249, 249);
+      background-color: #222831;
+      border-radius: 20px;
+    }
+
+    .minibox {
+      height: 200px;
+      width: 350px;
+      background-color: aliceblue;
+      border-bottom-left-radius: 30px;
+      border-top-left-radius: 18px;
+      border-top-right-radius: 19px;
+      overflow: hidden;
+    }
+
+    .img2 {
+      height: 150px;
+      width: 180px;
+      margin-top: 20px;
+      margin-left: 80px;
+      border-radius: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .img3 {
+      height: 140px;
+      width: 180px;
+      margin-top: 20px;
+      margin-left: 90px;
+      border-radius: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .img4 {
+      height: 150px;
+      width: 170px;
+      margin-top: 20px;
+      margin-left: 90px;
+      border-radius: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .img5 {
+      height: 150px;
+      width: 200px;
+      margin-top: 20px;
+      margin-left: 70px;
+      transition: transform 0.3s ease;
+    }
+
+    /* Scale images on hover with overflow hidden */
+    .box3:hover .img2,
+    .box4:hover .img3,
+    .box5:hover .img4,
+    .box3:hover .img5,
+    .box4:hover .img2,
+    .box5:hover .img3,
+    .box3:hover .img4,
+    .box4:hover .img5,
+    .box5:hover .img2 {
+      transform: scale(1.1);
+    }
+
+    /* Ensure images in any menu card scale properly */
+    .box3:hover .minibox img,
+    .box4:hover .minibox img,
+    .box5:hover .minibox img {
+      transform: scale(1.08);
+    }
+
+    .heading3 {
+      margin-top: 20px;
+      margin-left: 20px;
+      color: white;
+    }
+
+    .para5 {
+      margin-top: 20px;
+      margin-left: 20px;
+      color: white;
+    }
+
+    .price {
+      display: flex;
+      align-items: center;
+    }
+
+    .para6 {
+      margin-top: 20px;
+      margin-left: 20px;
+      color: white;
+    }
+
+    .cart {
+      margin-top: 10px;
+      margin-left: 240px;
+    }
+
+    .cart1 {
+      font-size: 24px;
+    }
+
+    .btn5 {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      background-color: orange;
+      color: white;
+      border: 0px;
+    }
+
+    .btn6 {
+      margin-top: 20px;
+      margin-left: 530px;
+      height: 40px;
+      width: 180px;
+      border-radius: 30px;
+      background-color: orange;
+      color: white;
+      border: 0px;
+    }
+
+    .main4 {
+      height: 840px;
+      width: 100vw;
+      border: 1px solid #222831;
+      margin-top: 70px;
+      background-color: #222831;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .box6 {
+      height: 800px;
+      width: 600px;
+    }
+
+    .box7 {
+      height: 800px;
+      width: 470px;
+    }
+
+    .img6 {
+      height: 680px;
+      width: 450px;
+      margin-top: 70px;
+      margin-left: 60px;
+    }
+
+    .heading4 {
+      color: white;
+      margin-top: 280px;
+      font-family: "Dancing Script", cursive;
+      font-size: 50px;
+    }
+
+    .para7 {
+      margin-top: 20px;
+      color: white;
+      font-size: large;
+    }
+
+    .btn7 {
+      margin-top: 30px;
+      height: 50px;
+      width: 200px;
+      border-radius: 40px;
+      border: 0px;
+      background-color: orange;
+      color: white;
+    }
+
+    .heading5 {
+      font-family: "Dancing Script", cursive;
+      margin-top: 100px;
+      margin-left: 30px;
+      font-size: 40px;
+    }
+
+    .info {
+      height: 40px;
+      width: 600px;
+      margin-top: 20px;
+    }
+
+    .main5 {
+      height: 320px;
+      width: 100vw;
+      border: 1px solid rgb(252, 251, 251);
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .map {
+      height: 250px;
+      width: 500px;
+      margin-left: 30px;
+      margin-top: 10px;
+    }
+
+    .box8 {
+      height: 350px;
+      width: 600px;
+      border: 0px solid rgb(251, 251, 251);
+      margin-left: 30px;
+      margin-top: 15px;
+    }
+
+    .box9 {
+      height: 300px;
+      width: 600px;
+      border: 1px solid rgb(254, 254, 254);
+    }
+
+    .btn8 {
+      height: 40px;
+      width: 180px;
+      border-radius: 30px;
+      border: 0px;
+      background-color: orange;
+      color: white;
+      margin-top: 10px;
+      font-size: 15px;
+    }
+
+    .heading6 {
+      margin-top: 100px;
+      margin-left: 450px;
+      font-family: "Dancing Script", cursive;
+      font-size: 40px;
+    }
+
+    .main6 {
+      height: 210px;
+      width: 100vw;
+      border: 1px solid #feffff;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .box10 {
+      height: 160px;
+      width: 500px;
+      border: 1px solid #222831;
+      margin-left: 100px;
+      background-color: #222831;
+    }
+
+    .box11 {
+      height: 160px;
+      width: 500px;
+      border: 1px solid #222831;
+      background-color: #222831;
+    }
+
+    .para8 {
+      color: white;
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+
+    .heading7 {
+      color: white;
+      margin-top: 15px;
+      margin-left: 10px;
+    }
+
+    .para9 {
+      color: white;
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+
+    .box12 {
+      height: 160px;
+      width: 1264.5px;
+      border: 1px solid rgb(255, 254, 254);
+      display: flex;
+      align-items: center;
+      gap: 380px;
+    }
+
+    .circle2 {
+      height: 150px;
+      width: 150px;
+      border: 5px solid yellow;
+      border-radius: 50%;
+      margin-left: 100px;
+    }
+
+    .circle3 {
+      height: 150px;
+      width: 150px;
+      border: 5px solid yellow;
+      border-radius: 50%;
+    }
+
+    .img7 {
+      height: 140px;
+      width: 140px;
+      border-radius: 50%;
+    }
+
+    .box13 {
+      height: 100px;
+      width: 1264.5px;
+      border: 1px solid rgb(253, 253, 253);
+    }
+
+    .btn9 {
+      height: 50px;
+      width: 50px;
+      border: 0px;
+      border-radius: 50%;
+      background-color: orange;
+      color: white;
+      margin-left: 560px;
+      margin-top: 50px;
+    }
+
+    .btn10 {
+      height: 50px;
+      width: 50px;
+      border: 0px;
+      border-radius: 50%;
+      background-color: orange;
+      color: white;
+      margin-left: 20px;
+    }
+
+    .arrow {
+      font-size: 25px;
+    }
+
+    .main7 {
+      height: 400px;
+      width: 100vw;
+      border: 1px solid #222831;
+      margin-top: 100px;
+      background-color: #222831;
+      display: flex;
+      align-items: center;
+      gap: 50px;
+    }
+
+    .box14 {
+      height: 300px;
+      width: 250px;
+      border: 1px solid #222831;
+      margin-left: 80px;
+    }
+
+    .box15 {
+      height: 300px;
+      width: 500px;
+      border: 1px solid #222831;
+    }
+
+    .box16 {
+      height: 300px;
+      width: 250px;
+      border: 1px solid #222831;
+    }
+
+    .div3 {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .Location {
+      color: white;
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+
+    .para10 {
+      color: white;
+      margin-top: 10px;
+    }
+
+    .heading8 {
+      color: white;
+      margin-top: 10px;
+      margin-left: 20px;
+      font-family: "Dancing Script", cursive;
+      margin-left: 30px;
+    }
+
+    .heading9 {
+      color: white;
+      margin-top: 10px;
+      margin-left: 220px;
+      font-family: "Dancing Script", cursive;
+    }
+
+    .para11 {
+      color: white;
+      margin-top: 10px;
+      margin-left: 20px;
+      text-align: center;
+    }
+
+    .main8 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn11 {
+      height: 40px;
+      width: 40px;
+      margin-top: 30px;
+      margin-left: 140px;
+      border-radius: 50%;
+      border: 0px;
+    }
+
+    .btn12 {
+      height: 40px;
+      width: 40px;
+      margin-top: 27px;
+      border-radius: 50%;
+      border: 0px;
+    }
+
+    .icon2 {
+      font-size: 20px;
+    }
+
+    .btn11:hover {
+      color: orange;
+    }
+
+    .btn12:hover {
+      color: orange;
+    }
+
+    .para12 {
+      color: white;
+      margin-top: 70px;
+      margin-left: 80px;
+    }
+
+    .para13 {
+      color: white;
+      margin-top: 20px;
+      margin-left: 150px;
+    }
+
+    .heading10 {
+      text-align: center;
+      margin-top: 10px;
+      color: white;
+      font-family: "dancing script", cursive;
+    }
+
+    .para14 {
+      text-align: center;
+      margin-top: 20px;
+      color: white;
+    }
+
+    .para15 {
+      text-align: center;
+      margin-top: 20px;
+      color: white;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main" id="home">
+    <nav class="nav">
+      <div class="tittle">
+        <h1 class="heading">Feane</h1>
+      </div>
+      <div class="links">
+        <a class="home" href="#home">Home</a>
+        <a class="menu" href="#menu">Menu</a>
+        <a class="about" href="#about">About</a>
+        <a class="booktable" href="#booktable">Book Table</a>
+      </div>
+      <div class="icons">
+        <a class="icon1" href=""><i class="ri-user-fill"></i></a> <a class="icon1" href=""><i class="ri-shopping-cart-line"></i></a> <a class="icon1" href=""><i class="ri-search-line"></i></a>
+        <button class="btn" onclick="location.href='#menu'">Order Online</button>
+      </div>
+    </nav>
+    <div class="main1">
+      <div class="div1">
+        <div class="div2" id="carouselContent">
+          <h2 class="heading1">Fast Food Restaurant</h2>
+          <p class="para">Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.</p>
+          <button class="orderbtn" onclick="location.href='#menu'">Order Now</button>
+        </div>
+        <div class="dots" id="carouselDots">
+          <span class="dot active" data-slide="0"></span>
+          <span class="dot" data-slide="1"></span>
+          <span class="dot" data-slide="2"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main2">
+    <div class="box1">
+      <div class="circle"> <img class="img" src="./images/o1.jpg" alt=""></div>
+      <div class="text">
+        <p class="para2">Tasty Thursdays</p>
+        <p class="para1">20% <span class="off">Off</span></p>
+        <a href="#menu"><button class="btn1">Order Now <i class="ri-shopping-cart-fill"></i></button></a>
+      </div>
+    </div>
+    <div class="box2">
+      <div class="circle1"> <img class="img1" src="./images/o2.jpg" alt=""></div>
+      <div class="text1">
+        <p class="para3">Pizza Days</p>
+        <p class="para4">15% <span class="off1">Off</span></p>
+        <a href="#menu"><button class="btn2">Order Now <i class="ri-shopping-cart-fill"></i></button></a>
+      </div>
+    </div>
+  </div>
+
+  <div id="menu">
+    <h2 class="heading2">Our Menu</h2>
+    <div class="button">
+      <a href=""><button class="btn4">All</button></a>
+      <a href=""><button class="btn4">Burger</button></a>
+      <a href=""><button class="btn4">Pizza</button></a>
+      <a href=""><button class="btn4">Pasta</button></a>
+      <a href=""><button class="btn4">Fries</button></a>
+    </div>
+    <div class="main3">
+      <div class="box3">
+        <div class="minibox"><img class="img2" src="./images/f1.png" alt=""></div>
+        <div class="minibox1">
+          <h2 class="heading3">Delicious Pizza</h2>
+          <p class="para5">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+          <div class="price">
+            <p class="para6">$20</p> <a class="cart" href=""><button class="btn5"><i class="ri-shopping-cart-fill cart1"></i></button></a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="box4">
+          <div class="minibox"><img class="img3" src="./images/f2.png" alt=""></div>
+          <div class="minibox1">
+            <h2 class="heading3">Delicious Burger</h2>
+            <p class="para5">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+            <div class="price">
+              <p class="para6">$20</p> <a class="cart" href=""><button class="btn5"><i class="ri-shopping-cart-fill cart1"></i></button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="box5">
+          <div class="minibox"><img class="img4" src="./images/f3.png" alt=""></div>
+          <div class="minibox1"></div>
+          <h2 class="heading3">Delicious Pizza</h2>
+          <p class="para5">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+          <div class="price">
+            <p class="para6">$20</p> <a class="cart" href=""><button class="btn5"><i class="ri-shopping-cart-fill cart1"></i></button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main3">
+      <div class="box3">
+        <div class="minibox"><img class="img5" src="./images/f4.png" alt=""></div>
+        <div class="minibox1">
+          <h2 class="heading3">Delicious Pasta</h2>
+          <p class="para5">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+          <div class="price">
+            <p class="para6">$20</p> <a class="cart" href=""><button class="btn5"><i class="ri-shopping-cart-fill cart1"></i></button></a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="box4">
+          <div class="minibox"><img class="img3" src="./images/f5.png" alt=""></div>
+          <div class="minibox1">
+            <h2 class="heading3">French Fries</h2>
+            <p class="para5">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+            <div class="price">
+              <p class="para6">$20</p> <a class="cart" href=""><button class="btn5"><i class="ri-shopping-cart-fill cart1"></i></button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="box5">
+          <div class="minibox"><img class="img4" src="./images/f6.png" alt=""></div>
+          <div class="minibox1"></div>
+          <h2 class="heading3">Delicious Pizza</h2>
+          <p class="para5">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+          <div class="price">
+            <p class="para6">$20</p> <a class="cart" href=""><button class="btn5"><i class="ri-shopping-cart-fill cart1"></i></button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main3">
+      <div class="box3">
+        <div class="minibox"><img class="img2" src="./images/f7.png" alt=""></div>
+        <div class="minibox1">
+          <h2 class="heading3">Delicious Pizza</h2>
+          <p class="para5">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+          <div class="price">
+            <p class="para6">$20</p> <a class="cart" href=""><button class="btn5"><i class="ri-shopping-cart-fill cart1"></i></button></a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="box4">
+          <div class="minibox"><img class="img3" src="./images/f8.png" alt=""></div>
+          <div class="minibox1">
+            <h2 class="heading3">Delicious Burger</h2>
+            <p class="para5">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+            <div class="price">
+              <p class="para6">$20</p> <a class="cart" href=""><button class="btn5"><i class="ri-shopping-cart-fill cart1"></i></button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="box5">
+          <div class="minibox"><img class="img4" src="./images/f9.png" alt=""></div>
+          <div class="minibox1"></div>
+          <h2 class="heading3">Delicious Pizza</h2>
+          <p class="para5">Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
+          <div class="price">
+            <p class="para6">$20</p> <a class="cart" href=""><button class="btn5"><i class="ri-shopping-cart-fill cart1"></i></button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#menu"><button class="btn6">view More</button></a>
+  </div>
+
+  <div class="main4" id="about">
+    <div class="box6"> <img class="img6" src="./images/about-img.png" alt=""></div>
+    <div class="box7">
+      <h2 class="heading4">We Are Feane</h2>
+      <p class="para7">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All</p>
+      <a href="#about"><button class="btn7">Read More</button></a>
+    </div>
+  </div>
+
+  <div id="booktable">
+    <h1 class="heading5">Book A Table</h1>
+    <div class="main5">
+      <div class="box8">
+        <form action="">
+          <input class="info" type="text" placeholder="Your Name"> <br>
+          <input class="info" type="text" placeholder="Phone Number"> <br>
+          <input class="info" type="text" placeholder="Your Email"> <br>
+          <select class="info" name="How Many Persons" id="">
+            <option value="">How Many Persons</option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">5</option>
+            <option value="">6</option>
+            <option value="">10</option>
+          </select>
+          <input class="info" type="date">
+        </form>
+        <button class="btn8" id="bookNowBtn">Book Now</button>
+      </div>
+      <div class="box9">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d222432.93394248257!2d71.78003684565431!3d29.413752845584202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1774463531609!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <h1 class="heading6">What Says Our Customers</h1>
+  </div>
+  <div class="main6">
+    <div class="box10">
+      <p class="para8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti expedita obcaecati praesentium officiis quia porro molestiae laudantium optio beatae aperiam.</p>
+      <h2 class="heading7">Moana Michell</h2>
+      <p class="para9">Magna Aliqua</p>
+    </div>
+    <div class="box11">
+      <p class="para8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti expedita obcaecati praesentium officiis quia porro molestiae laudantium optio beatae aperiam.</p>
+      <h2 class="heading7">Mike Hamell</h2>
+      <p class="para9">Magna Aliqua</p>
+    </div>
+  </div>
+  <div class="box12">
+    <div class="circle2"><img class="img7" src="./images/client1.jpg" alt=""></div>
+    <div class="circle3"><img class="img7" src="./images/client2.jpg" alt=""></div>
+  </div>
+  <div class="box13">
+    <div><button class="btn9"><i class="ri-arrow-left-s-line arrow"></i></button><button class="btn10"><i class="ri-arrow-right-s-line arrow"></i></button> </div>
+  </div>
+  <div class="main7">
+    <div class="box14">
+      <h2 class="heading8">Contact Us</h2>
+      <div class="div3"> <i class="ri-map-pin-line Location"></i>
+        <p class="para10">Location</p>
+      </div>
+      <div class="div3"><i class="ri-phone-fill Location"></i>
+        <p class="para10">Call +01 109 204 1542</p>
+      </div>
+      <div class="div3"><i class="ri-mail-fill Location"></i>
+        <p class="para10">feane@gmail.com</p>
+      </div>
+    </div>
+    <div class="box15">
+      <h1 class="heading9">Feane</h1>
+      <p class="para11">Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with</p>
+      <div class="main8">
+        <button class="btn11"><i class="ri-facebook-fill icon2"></i></button>
+        <button class="btn12"><i class="ri-twitter-fill icon2"></i></button>
+        <button class="btn12"><i class="ri-linkedin-fill icon2"></i></button>
+        <button class="btn12"><i class="ri-instagram-line icon2"></i></button>
+        <button class="btn12"><i class="ri-pinterest-fill icon2"></i></button>
+      </div>
+      <div>
+        <p class="para12">© 2026 All Rights Reserved By Free Html Templates</p>
+      </div>
+      <div>
+        <p class="para13">© Distributed By ThemeWagon</p>
+      </div>
+    </div>
+    <div class="box16">
+      <h2 class="heading10">Opening Hours</h2>
+      <p class="para14">Everyday</p>
+      <p class="para15">10.00 Am -10.00 Pm</p>
+    </div>
+  </div>
+
+  <script>
+    // Carousel functionality (unchanged)
+    const slides = [
+      { heading: "Fast Food Restaurant", para: "Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam." },
+      { heading: "Crispy & Tasty Burgers", para: "Sizzling hot burgers made with 100% fresh ingredients. Enjoy the perfect blend of flavors, served with crispy fries and our signature sauce. Satisfaction guaranteed every bite." },
+      { heading: "Authentic Italian Pizza", para: "Wood-fired pizza with the finest mozzarella, fresh tomatoes, and aromatic basil. Experience the true taste of Italy right here. A meal to remember!" }
+    ];
+    let currentSlide = 0;
+    const carouselDiv = document.getElementById('carouselContent');
+    const dots = document.querySelectorAll('#carouselDots .dot');
+    function updateSlide(index) {
+      if (!carouselDiv) return;
+      carouselDiv.classList.remove('slide-left-right');
+      void carouselDiv.offsetWidth;
+      const slide = slides[index];
+      carouselDiv.innerHTML = `<h2 class="heading1">${slide.heading}</h2><p class="para">${slide.para}</p><button class="orderbtn" onclick="location.href='#menu'">Order Now</button>`;
+      carouselDiv.classList.add('slide-left-right');
+      dots.forEach((dot, i) => {
+        if (i === index) dot.classList.add('active');
+        else dot.classList.remove('active');
+      });
+      currentSlide = index;
+    }
+    dots.forEach((dot, idx) => dot.addEventListener('click', () => { if (idx !== currentSlide) updateSlide(idx); }));
+    let autoInterval = setInterval(() => { let next = (currentSlide + 1) % slides.length; updateSlide(next); }, 6000);
+    const dotsContainer = document.getElementById('carouselDots');
+    dotsContainer.addEventListener('mouseenter', () => clearInterval(autoInterval));
+    dotsContainer.addEventListener('mouseleave', () => { autoInterval = setInterval(() => { let next = (currentSlide + 1) % slides.length; updateSlide(next); }, 6000); });
+    document.getElementById('bookNowBtn')?.addEventListener('click', function(e) { e.preventDefault(); alert("Booking request sent! We'll contact you soon."); });
+    document.querySelectorAll('.btn5').forEach(btn => { btn.addEventListener('click', function(e) { e.preventDefault(); alert("Item added to cart (demo)."); }); });
+  </script>
+</body>
+
+</html>
