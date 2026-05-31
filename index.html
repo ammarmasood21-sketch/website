@@ -811,18 +811,6 @@
       color: orange;
     }
 
-    .para12 {
-      color: white;
-      margin-top: 70px;
-      margin-left: 80px;
-    }
-
-    .para13 {
-      color: white;
-      margin-top: 20px;
-      margin-left: 150px;
-    }
-
     .heading10 {
       text-align: center;
       margin-top: 10px;
@@ -990,10 +978,6 @@
       .btn11 {
         margin-left: 0;
       }
-      .para12, .para13 {
-        margin-left: 0;
-        text-align: center;
-      }
     }
 
     @media screen and (max-width: 992px) {
@@ -1158,9 +1142,6 @@
       .btn11, .btn12 {
         margin-top: 15px;
       }
-      .para12, .para13 {
-        font-size: 13px;
-      }
     }
 
     @media screen and (max-width: 576px) {
@@ -1259,9 +1240,6 @@
       .heading9 {
         font-size: 28px;
       }
-      .para12, .para13 {
-        margin-top: 20px;
-      }
     }
 
     /* Additional image responsiveness for all images inside containers */
@@ -1285,6 +1263,214 @@
       height: 100%;
       object-fit: cover;
     }
+
+    /* ---------- NEW SEPARATE COPYRIGHT FOOTER (moved from .box15) ---------- */
+    .copyright-separate {
+      background-color: #1e242c;
+      text-align: center;
+      padding: 28px 20px;
+      width: 100%;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .copyright-separate p {
+      color: #dddddd;
+      margin: 8px 0;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+    }
+    .copyright-separate p:first-child {
+      margin-top: 0;
+    }
+    .copyright-separate p:last-child {
+      margin-bottom: 0;
+    }
+    @media screen and (max-width: 768px) {
+      .copyright-separate {
+        padding: 18px 15px;
+      }
+      .copyright-separate p {
+        font-size: 12px;
+      }
+    }
+
+    /* ---------- MODIFICATIONS: Navbar always in one row (no wrap) ---------- */
+    /* Force navbar to stay in single row on all devices */
+    @media screen and (max-width: 1200px) {
+      .nav {
+        flex-wrap: nowrap !important;
+        justify-content: space-between !important;
+        padding: 0 20px !important;
+        gap: 10px !important;
+      }
+      .links {
+        flex-wrap: nowrap !important;
+        gap: 20px !important;
+        font-size: 16px !important;
+        margin-top: 30px !important;
+      }
+      .icons {
+        flex-wrap: nowrap !important;
+        gap: 12px !important;
+      }
+      .btn {
+        width: 130px !important;
+        height: 38px !important;
+        font-size: 13px !important;
+        margin-top: 28px !important;
+      }
+      .heading {
+        font-size: 28px;
+        padding-right: 20px;
+        margin-top: 28px;
+      }
+      .icon1 {
+        margin-top: 28px;
+      }
+    }
+
+    @media screen and (max-width: 992px) {
+      .nav {
+        flex-wrap: nowrap !important;
+        justify-content: space-between !important;
+        gap: 8px !important;
+        padding: 0 12px !important;
+      }
+      .links {
+        gap: 15px !important;
+        font-size: 14px !important;
+        margin-top: 32px !important;
+      }
+      .icons {
+        gap: 8px !important;
+      }
+      .btn {
+        width: 110px !important;
+        height: 34px !important;
+        font-size: 11px !important;
+        margin-top: 30px !important;
+      }
+      .heading {
+        font-size: 24px;
+        margin-top: 30px;
+        padding-right: 10px;
+      }
+      .icon1 {
+        margin-top: 30px;
+        font-size: 18px;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .nav {
+        gap: 5px !important;
+        padding: 0 8px !important;
+      }
+      .links {
+        gap: 10px !important;
+        font-size: 12px !important;
+        margin-top: 34px !important;
+      }
+      .icons {
+        gap: 6px !important;
+      }
+      .btn {
+        width: 95px !important;
+        height: 32px !important;
+        font-size: 10px !important;
+        margin-top: 32px !important;
+        border-radius: 16px !important;
+      }
+      .heading {
+        font-size: 20px;
+        margin-top: 32px;
+        padding-right: 5px;
+      }
+      .icon1 {
+        margin-top: 32px;
+        font-size: 16px;
+      }
+    }
+
+    @media screen and (max-width: 576px) {
+      .nav {
+        gap: 4px !important;
+        padding: 0 5px !important;
+      }
+      .links {
+        gap: 6px !important;
+        font-size: 10px !important;
+        margin-top: 35px !important;
+      }
+      .icons {
+        gap: 4px !important;
+      }
+      .btn {
+        width: 80px !important;
+        height: 28px !important;
+        font-size: 8px !important;
+        margin-top: 34px !important;
+        border-radius: 14px !important;
+      }
+      .heading {
+        font-size: 18px;
+        margin-top: 34px;
+        padding-right: 0;
+      }
+      .icon1 {
+        margin-top: 34px;
+        font-size: 14px;
+      }
+    }
+
+    /* ---------- MODIFICATIONS: Footer less gap between sections ---------- */
+    /* Reduce gaps in main7 footer area while keeping design identical */
+    .main7 {
+      gap: 25px !important;
+      margin-top: 60px !important;
+      padding-top: 20px !important;
+      padding-bottom: 20px !important;
+    }
+    /* Adjust internal spacing for footer columns */
+    .box14, .box15, .box16 {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+    }
+    .box14 {
+      margin-left: 60px !important;
+    }
+    .box15 .heading9 {
+      margin-top: 5px !important;
+    }
+    .box15 .para11 {
+      margin-top: 5px !important;
+      margin-bottom: 5px !important;
+    }
+    .box16 .para14, .box16 .para15 {
+      margin-top: 8px !important;
+    }
+    /* Adjust responsive footer gaps for consistency */
+    @media screen and (max-width: 1200px) {
+      .main7 {
+        gap: 20px !important;
+      }
+      .box14 {
+        margin-left: auto !important;
+      }
+    }
+    @media screen and (max-width: 992px) {
+      .main7 {
+        gap: 25px !important;
+        margin-top: 50px !important;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      .main7 {
+        gap: 20px !important;
+        margin-top: 40px !important;
+      }
+    }
+    /* Also reduce gap in customer testimonial carousel arrows area if needed, but not requested */
+    /* Keep original design intact everywhere else */
   </style>
 </head>
 
@@ -1515,6 +1701,8 @@
   <div class="box13">
     <div><button class="btn9"><i class="ri-arrow-left-s-line arrow"></i></button><button class="btn10"><i class="ri-arrow-right-s-line arrow"></i></button> </div>
   </div>
+  
+  <!-- main7 footer section (copyright removed from box15) -->
   <div class="main7">
     <div class="box14">
       <h2 class="heading8">Contact Us</h2>
@@ -1538,18 +1726,18 @@
         <button class="btn12"><i class="ri-instagram-line icon2"></i></button>
         <button class="btn12"><i class="ri-pinterest-fill icon2"></i></button>
       </div>
-      <div>
-        <p class="para12">© 2026 All Rights Reserved By Free Html Templates</p>
-      </div>
-      <div>
-        <p class="para13">© Distributed By ThemeWagon</p>
-      </div>
     </div>
     <div class="box16">
       <h2 class="heading10">Opening Hours</h2>
       <p class="para14">Everyday</p>
       <p class="para15">10.00 Am -10.00 Pm</p>
     </div>
+  </div>
+
+  <!-- SEPARATE COPYRIGHT SECTION (moved from .box15) -->
+  <div class="copyright-separate">
+    <p>© 2026 All Rights Reserved By Free Html Templates</p>
+    <p>© Distributed By ThemeWagon</p>
   </div>
 
   <script>
